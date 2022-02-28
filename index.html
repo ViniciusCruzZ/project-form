@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário para fins de estudos!">
+    <meta name="author" content="Vinícius Cruz">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Formulário</legend>
+            <div class="data1">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="João" required autocomplete="name">
+                <label for="surname">Sobrenome:</label>
+                <input type="text" name="surname" id="surname" placeholder="Nunes" required>
+            </div>
+            <div class="data2">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="jnunes@gmail.com" required autocomplete="email">
+                <label for="tel">Telefone:</label>
+                <input type="number" name="tel" id="tel" placeholder="5511987654238" required autocomplete="tel">
+            </div>
+            <div class="data3">
+                <label for="nasc">Data de Nascimento:</label>
+                <input type="date" name="nasc" id="nasc" required autocomplete="bday">
+                <br>
+                <label for="history">Conte um pouco sobre sua história:</label>
+                <br>
+                <textarea name="history" id="history" cols="50" rows="100" placeholder="Digite aqui..."></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
